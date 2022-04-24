@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+:root {
+  --font: "Epilogue", sans-serif;
+  --dark-blue: rgb(23, 35, 47);
+  --gray: rgb(73, 86, 109);
+  --cream: rgb(243, 237, 231);
+  --cream-white: rgb(250, 248, 246);
+  --purple: rgb(160, 96, 255);
+  --magenta: rgb(203, 48, 227);
+  --orange: rgb(25, 168, 78);
+  --pure-white: rgb(255, 255, 255);
+  --pure-black: rgb(0, 0, 0);
+}
+
+/* General Styles */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--cream-white);
+  color: var(--dark-blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* Shared Styles */
+.container {
+  width: min(91.4667%, 34.3rem);
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.main-heading .bold-heading,
+.section-heading .bold-heading {
+  font-weight: 700;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.logo {
+  width: 8.1rem;
+}
+
+/* Header */
+
+.header {
+  margin: 2.4rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .btn {
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.14px;
+  padding: 1.2rem 1.65rem 1.2rem 1.55rem;
+  border: 1px solid var(--dark-blue);
+}
+
+/* Main */
+.main {
+  margin-top: 8.332rem;
+}
+
+.hero {
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 24rem;
+  background-image: url("../assets/image-hero-landscape.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 35.368rem;
+  left: 0;
+}
+
+.main-heading {
+  font-weight: 400;
+  font-size: 3.8rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.527778px;
+}
+
+.decorated-word {
+  position: relative;
+}
+
+.decorated-word::after {
+  content: "";
+  width: 15.147rem;
+  height: 1.9rem;
+  background-image: url("../assets/pattern-curved-line-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -2.732rem;
+  right: 0;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.0888889px;
+  color: var(--gray);
+  margin-top: 3.2rem;
+}
+
+.hero .btn {
+  background: var(--dark-blue);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.18px;
+  color: var(--cream-white);
+  padding: 1.5rem 3.1rem 1.4rem 3.2rem;
+  margin-top: 3.2rem;
+}
+
+.stats {
+  margin-top: 35.168rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  text-align: center;
+}
+
+.stats-number,
+.stats-description {
+  display: block;
+}
+
+.stats-number {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+}
+
+.stats-description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 2.5px;
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-top: 0.1rem;
+}
+
+.testimonial {
+  background: var(--dark-blue);
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 18.1rem;
+  padding: 33.8rem 1.6rem 6.4rem;
+  position: relative;
+  top: 5.6rem;
+}
+
+.section-heading {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-align: center;
+  letter-spacing: -0.416667px;
+  color: var(--cream-white);
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  width: 24.3rem;
+  height: 39.5rem;
+  background-image: url("../assets/image-jeremy-small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -51.2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.section-heading::after {
+  content: "";
+  width: 4.927rem;
+  height: 4rem;
+  background-image: url("../assets/pattern-curved-line-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -7.7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.testimonial .paragraph {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.09px;
+  color: var(--cream);
+  margin-top: 4rem;
+}
+
+.testimonial-name {
+  display: block;
+  margin-top: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: -0.18px;
+  color: var(--cream-white);
+  text-transform: uppercase;
+}
+
+.testimonial-title {
+  display: block;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: var(--cream);
+  text-transform: uppercase;
+}
+
+.footer {
+  background: var(--cream);
+  padding: 11.2rem 0 8rem;
+}
+
+.footer .logo {
+  margin: 0 auto;
+}
+
+.copyright {
+  display: block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.0833333px;
+  color: var(--gray);
+  margin: 3.3rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+}
